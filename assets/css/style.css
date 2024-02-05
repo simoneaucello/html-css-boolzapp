@@ -7,3 +7,59 @@
 body{
   font-family: 'Lato', sans-serif;
 }
+
+.debug{
+  background-color: rgb(255, 221, 127);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+
+.wrapper{
+  background:linear-gradient(#099688 10%, #D6DBD8 10%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.container{
+  height: 90vh;
+  width: 80%;
+  margin: 0 auto;   
+}
+
+
+
+
+.flexed{
+  display: flex;
+}
+
+.between{
+  justify-content: space-between;
+}
+
+/* UTILITIES  */
+
+.row{
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
+
+
+.left-col{
+  width: 30vw;
+  height: 100%;
+}
+
+.right-col{
+  width: 70vw;
+  /* background-image: url(../img/mine.jpg); */
+  height: 100%;
+}
