@@ -1,4 +1,4 @@
-:root
+/* :root */
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
-  height: 100vh;
+  /* max-height: 100vh; */
 }
 
 
@@ -22,12 +22,11 @@ body{
 
 
 .container{
-  height: 90%;
-  width: 1300px;
   margin: 0 auto;   
+  height: 90%;
+  /* width: 1300px; */
+  width: 80%;
 }
-
-
 
 
 .flexed{
@@ -44,11 +43,9 @@ body{
 
 
 img{
-  margin: 50px;
   max-width: 100%;
   width: 60px;
   border-radius: 50%;
-  
 }
 
 /* UTILITIES  */
@@ -63,7 +60,8 @@ img{
 /* LEFT COL  */
 
 .left-col{
-  width: 30%;
+  width: 370px;
+  /* width: 30%; */
   max-height: 100%;
   border-right: 1px solid #afafaf;
   
@@ -71,7 +69,7 @@ img{
 
 .scroll{
   width: 100%;
-  height: 100vh;
+  height: 75%;
   overflow-y: scroll;  
 }
 
@@ -80,6 +78,8 @@ img{
 .top-l-bar{
   background-color: #e9e9e9;
   padding: 5px;
+  height: 88px;
+  
 }
 
 .action{
@@ -143,16 +143,17 @@ img{
 
 
 .avatar{
-  margin:7px
+  margin:7px;
+
 }
 
 .text-not h4{
   font-size: .9rem;
 }
 
-.text-not p{
-  padding-top: 5px;
-  text-decoration: underline;
+.text-not a{
+  color: black;
+  padding-top: 10px;
   font-size: .9rem;
 }
 
@@ -168,9 +169,6 @@ img{
   padding: 5px; 
 }
 
-.chat-list{
-  overflow-y: scroll;
-}
 
 .hours {
   margin-left: auto;
@@ -195,7 +193,8 @@ img{
 /* RIGHT COL  */
 
 .right-col{
-  width: 72%; 
+  width: 70%; 
+  max-height: 100%;
 
 }
 
@@ -210,6 +209,7 @@ img{
 .top-r-bar p{
   color: black;
   padding-top: 5px;
+  height: 15%;
 
 }
 
@@ -280,6 +280,7 @@ img{
   /* height: 10%; */
   background-color: #f2eeea;
   padding: 5px;
+  max-height: 100%;
 
 }
 
@@ -296,7 +297,7 @@ color: #b2b5b7;
 .write-box {    
   display: flex;
   justify-content: space-between;
-  height: 90%; 
+  /* height: 90%;  */
 }
 
 .emoticon , .rec {
@@ -323,15 +324,17 @@ color: #b2b5b7;
   border: none;  
   color: #adafb1; 
   font-size: 1rem;
+
 }
 
 
 /* RESPONSIVE  */
 
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
 
   .container{
+    width: 100%;
     height:100vh;
   }
 
@@ -351,8 +354,13 @@ color: #b2b5b7;
   }
 
   .left-col{
-    width: 10%;
-    height:100%;
+   /* width: 10%; */
+   width: 90px;
+   height: 100%;
+  }
+
+  .scroll{
+    min-height:85%;
   }
 
   .right-col{
@@ -363,9 +371,11 @@ color: #b2b5b7;
   .right-col .action{
     display:block;
   }
+
+
 }
 
-@media screen and (max-width: 541px){
+@media screen and (max-width: 540px){
 
   .container{
     height:100vh;
